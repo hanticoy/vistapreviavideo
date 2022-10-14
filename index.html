@@ -9,31 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script lang="javascript">
-
-        async function playVideo(videoElem) {
-            try {
-                await videoElem.play();
-
-            } catch (err) {
-                console.log('error')
-            }
-        }
-
-        function fnOnMouseOver(videoElem) {
-            if (videoElem.paused) {
-                
-                playVideo(videoElem);
-            } else {
-                videoElem.pause();
-            }
-        }
-        function fnOnMouseOut(obj) {
-            let video = document.getElementById("myVideoPlayer");
-            video.pause();
-            video.currentTime = 0;
-        }
-    </script>
+    <script src="script.js"></script>
 </head>
 
 <body>
